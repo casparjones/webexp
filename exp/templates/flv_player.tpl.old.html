@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Flash Video Player</title>
+  <script>
+    parent.document.getElementById("my_iframe").style.width = "410px;";
+    parent.document.getElementById("my_iframe").style.height = "250px;";
+    parent.document.getElementById("my_iframe_title").innerHTML = "<b>{iframe_title}</b>";
+  </script>
+</head>
+<body style="margin:0px;">
+<object type="application/x-shockwave-flash" width="400" height="220" wmode="transparent"
+	data="{mod_url}/flvplayer.swf?file={flv_file}&autostart=true">
+	<param name="movie" value="{mod_url}/flvplayer.swf?file={flv_file}&autostart=true" />
+	<param name="wmode" value="transparent" />
+</object>
+</body>
+</html>

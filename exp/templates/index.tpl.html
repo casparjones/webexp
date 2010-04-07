@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+    <meta name="generator" content="PSPad editor, www.pspad.com">
+    <link rel="shortcut icon" type="image/x-icon" href="./ext/exp_logo.ico">
+    <title>{folder_title}WebExp&sup2;</title>
+    <link rel="stylesheet" href="{js_url}/slimbox.css" type="text/css" media="screen" /> 
+    <script type="text/javascript" src="{js_url}/mootools.js"></script>
+    <script type="text/javascript" src="{js_url}/slimbox.js"></script>
+    <script src="{js_url}/ajax_control.js" type="text/javascript"></script>
+    <style type="text/css" media="screen,projection">  
+    body {
+    	color: #333;
+    	font: 13px 'Lucida Grande', Verdana, sans-serif;
+    }
+    
+    div#galerie {
+      float: left;
+      width: 105px;
+      height: 115px;
+      text-align: center;
+      cursor: pointer;
+      margin: 8px;
+    }
+
+    div#thumb {
+      display: table-cell;
+      margin: auto;
+      background-color: #E6E5E5;
+      vertical-align: middle;
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+    }
+     
+   
+    div#name {
+      color: Black;
+      font-size: 10px;
+    }
+    
+
+   
+    </style>    
+  </head>
+  <body>
+  <table width="100%" height="100%" border=0>
+    <tr height=20>
+      <td id="exp_info" style="text-align:left; font-size:10px">{exp_info}</td>
+      <td width="250"><div id="exp_options" style="font-size:10px" valign=top align='right'>{exp_options}</div></td>
+    </tr>
+    <tr>
+      <td colspan="2" valign="top"><div id="dir_output">{dir_output}</div></td>
+    </tr>
+  </table>
+  
+    <div id="my_iframe" style="width: 905px; height: 650px; text-align:left; padding:5px; font-size:10px; top: 10%; left: 10%; position:absolute; background-color: #c1d8ff; display:none; border: 1px solid #000000;">
+     <table width="100%">
+      <tr>
+        <td align="left">
+        <input style="display:inline;" type="button" onclick="Effect.toggle('my_iframe','appear'); return false;" value="x">
+        <div style="display:inline; font-size:10px;" id="my_iframe_title"></div>
+        <td>
+      </tr><tr>
+        <td align="left">
+          <iframe id="myiframe_target" name="myiframe_target" src="about:blank" style="width:95%; height:95%" align="center" scrolling="no" marginheight="0" marginwidth="0" frameborder="0">
+          &nbsp;Bitte benutzen sie ein Framefähigen Browser!
+          </iframe>
+        </td>
+      </tr>
+     </table>
+    </div>
+    <div id="debug_output">{debug_output}</div>
+    <script type="text/javascript">
+      $('my_iframe').makeDraggable();
+    </script>
+  </body>
+</html>

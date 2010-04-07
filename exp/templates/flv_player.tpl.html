@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>FlowPlayer</title>
+  <script>
+    parent.document.getElementById("my_iframe").style.width = "510px;";
+    parent.document.getElementById("my_iframe").style.height = "430px;";
+    parent.document.getElementById("myiframe_target").style.width = "500px;";
+    parent.document.getElementById("myiframe_target").style.height = "410px;";
+  
+    parent.document.getElementById("my_iframe_title").innerHTML = "<b>{iframe_title}</b>";
+  </script>
+</head>
+<body>
+	<!--
+        Flashvars are used to configure the player. All configuration settings
+		can be specified here in HTML object tag using the 'flashvars' parameter.
+		
+		Alternatively an external configuration file can be used. In this case
+		the name of the configuration file must be specified here in flashvars.
+		
+		Please refer to flowPlayer.js for documentation of the different configuration
+		parameters that are available also to be used as flashvars.
+		
+	-->
+<object type="application/x-shockwave-flash" data="{mod_url}/FlowPlayerLP.swf" width="500" height="400" id="FlowPlayer">
+	<param name="allowScriptAccess" value="{mod_url}/FlowPlayerLP.swf" />
+	<param name="movie" value="{mod_url}/FlowPlayerLP.swf" />
+	<param name="quality" value="high" />
+	<param name="scale" value="noScale" />
+	<param name="wmode" value="transparent" />
+  <param name="flashvars" value="baseURL=&videoFile={flv_file}&autoPlay=true&loop=false" /> 
+</object>
+</body>
+</html>

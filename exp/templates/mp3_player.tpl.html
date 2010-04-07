@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Flash MP3 Player</title>
+	<script type="text/javascript" src="{js_url}/ufo.js"></script>
+  <script>
+    parent.document.getElementById("my_iframe").style.width = "510px;";
+    parent.document.getElementById("my_iframe").style.height = "125px;";
+    parent.document.getElementById("my_iframe_title").innerHTML = "<b>{iframe_title}</b>";
+  </script>
+</head>
+<body style="margin:5px;">
+
+<p id="single">
+<a href="http://www.macromedia.com/go/getflashplayer">Get the Flash Player</a> to see this player.</p>
+<script type="text/javascript">
+	var FO = { 	
+    movie:"{mod_url}/mp3player.swf", 
+    width:"300", 
+    height:"20", 
+    majorversion:"7", 
+    build:"0", 
+    bgcolor:"#FFFFFF", 
+    flashvars:"file={mp3_file}&autostart=true" };
+	UFO.create(FO, "single");
+</script>
+
+
+
+</body>
+</html>
